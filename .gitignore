@@ -1,0 +1,5 @@
+## ignore files to upload to repo
+
+**/.DS_Store
+
+**/.idea

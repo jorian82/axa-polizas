@@ -1,0 +1,187 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+3:400,700|Bodoni+Moda:400,700&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+3:400,700|Bodoni+Moda:400,700&display=swap';
+@import "font-awesome.min.css";
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 100%;
+        font-family: "Source Sans 3";
+    }
+}
+#wrapper {
+    width: 1600px;
+    font-family: "Source Sans 3";
+}
+.footer {
+    width: 100%;
+    background-color: #1f1f9c;
+}
+.footer .options {
+    width: 1200px;
+    height: 180px;
+    margin: auto;
+}
+.footer .options .left-container {
+    width: 590px;
+    min-height: 180px;
+    padding: 24px;
+}
+.footer .options .left-container .element {
+    padding: 8px;
+}
+.footer .options .social-media {
+    width: 590px;
+    min-height: 180px;
+}
+.footer .privacy {
+    height: 50px;
+    background: #00008f;
+}
+.content {
+    width: 1200px;
+    min-height: 500px;
+    margin: auto;
+}
+.menu {
+    width: 1200px;
+    height: 62px;
+    margin: auto;
+    color: #00008f;
+    font-size: 14px;
+}
+.banner {
+    width: 1200px;
+    height: 41px;
+    margin: auto;
+    color: #5f5f5f;
+    font-size: 12px;
+}
+.header {
+    width: 100%;
+    height: 204px;
+    color: #ffffff;
+    background: #00AD83;
+    font-family: "Bodoni Moda";
+}
+.header .header-container {
+    width: 1200px;
+    margin: auto;
+}
+.header .header-text-left {
+    float: left;
+}
+.header .header-text-right {
+    float: right;
+    font-family: "Source Sans 3";
+    font-size: 20px;
+}
+.header .emp-text {
+    color: #00AD83;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.item {
+    float: right;
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    font-size: inherit;
+}
+@media screen and (max-width: 768px) {
+    .item #wrapper {
+        width: 100%;
+        font-family: "Source Sans 3";
+    }
+}
+.item #wrapper {
+    width: 1600px;
+    font-family: "Source Sans 3";
+}
+.item .footer {
+    width: 100%;
+    background-color: #1f1f9c;
+}
+.item .footer .options {
+    width: 1200px;
+    height: 180px;
+    margin: auto;
+}
+.item .footer .options .left-container {
+    width: 590px;
+    min-height: 180px;
+    padding: 24px;
+}
+.item .footer .options .left-container .element {
+    padding: 8px;
+}
+.item .footer .options .social-media {
+    width: 590px;
+    min-height: 180px;
+}
+.item .footer .privacy {
+    height: 50px;
+    background: #00008f;
+}
+.item .content {
+    width: 1200px;
+    min-height: 500px;
+    margin: auto;
+}
+.item .menu {
+    width: 1200px;
+    height: 62px;
+    margin: auto;
+    color: #00008f;
+    font-size: 14px;
+}
+.item .banner {
+    width: 1200px;
+    height: 41px;
+    margin: auto;
+    color: #5f5f5f;
+    font-size: 12px;
+}
+.item .header {
+    width: 100%;
+    height: 204px;
+    color: #ffffff;
+    background: #00AD83;
+    font-family: "Bodoni Moda";
+}
+.item .header .header-container {
+    width: 1200px;
+    margin: auto;
+}
+.item .header .header-text-left {
+    float: left;
+}
+.item .header .header-text-right {
+    float: right;
+    font-family: "Source Sans 3";
+    font-size: 20px;
+}
+.item .header .emp-text {
+    color: #00AD83;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.item .item {
+    float: right;
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: inherit;
+    font-size: inherit;
+}
+.item .item .selected {
+    border-bottom: 3px solid #d24723;
+}
+.item .selected {
+    border-bottom: 3px solid #d24723;
+}

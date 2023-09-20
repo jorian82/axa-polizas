@@ -1,0 +1,131 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+3:400,700|Bodoni+Moda:400,700&display=swap';
+@import "font-awesome.min.css";
+
+$header-bg: #00AD83;
+$header-txt: #ffffff;
+$menu-bg: #ffffff;
+$menu-text: #5f5f5f;
+$menu-selected: #d24723;
+$nav-text: #00008f;
+$button-text: #1f1f9c;
+$button-selected: $button-text;
+$button-bg: #ffffff;
+$timeline-arrows: $nav-text;
+$timeline: #0f0f0f;
+$timeline-icon: #00adc6;
+$timeline-text: #0f0f0f;
+$footer-top: $button-text;
+$footer-bottom: $nav-text;
+$header-font: "Bodoni Moda";
+$header-font-size-dt: "40px";
+$header-font-size-mb: "24px";
+$site-wide-text: "Source Sans 3";
+
+@media screen and (max-width: 768px){
+  #wrapper {
+    width: 100%;
+    font-family: $site-wide-text;
+  }
+}
+
+#wrapper {
+  width: 1600px;
+  font-family: $site-wide-text;
+}
+
+.footer {
+  width: 100%;
+  background-color: $footer-top;
+
+  .options {
+    width: 1200px;
+    height: 180px;
+    margin: auto;
+
+    .left-container {
+      width: 590px;
+      min-height: 180px;
+      padding: 24px;
+
+      .element {
+        padding: 8px;
+      }
+    }
+    .social-media {
+      width: 590px;
+      min-height: 180px;
+    }
+  }
+  .privacy {
+    height: 50px;
+    background: $footer-bottom;
+  }
+}
+
+.content {
+  width: 1200px;
+  min-height: 500px;
+  margin: auto;
+}
+
+.menu {
+  width: 1200px;
+  height: 62px;
+  margin: auto;
+  color: $nav-text;
+  font-size: 14px;
+}
+
+.banner {
+  width: 1200px;
+  height: 41px;
+  margin: auto;
+  color: $menu-text;
+  font-size: 12px;
+}
+
+.header {
+  width: 100%;
+  height: 204px;
+  color: $header-txt;
+  background: $header-bg;
+  font-family: $header-font;
+
+  .header-container {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .header-text-left{
+    float: left;
+  }
+
+  .header-text-right{
+    float: right;
+    font-family: $site-wide-text;
+    font-size: 20px;
+  }
+
+  .emp-text {
+    color: $header-bg;
+    background: $header-txt;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+.item {
+  float: right;
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  font-size: inherit;
+
+  .selected {
+    border-bottom: 3px solid $menu-selected;
+  }
+}
+
