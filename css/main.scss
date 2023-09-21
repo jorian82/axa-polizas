@@ -12,14 +12,20 @@ $button-selected: $button-text;
 $button-bg: #ffffff;
 $timeline-arrows: $nav-text;
 $timeline: #0f0f0f;
+$timeline-bar: #f0f0f0;
 $timeline-icon: #00adc6;
 $timeline-text: #0f0f0f;
 $footer-top: $button-text;
 $footer-bottom: $nav-text;
+$details-bg: #164074;
 $header-font: "Bodoni Moda";
 $header-font-size-dt: "40px";
 $header-font-size-mb: "24px";
 $site-wide-text: "Source Sans 3";
+
+body {
+  font-family: $site-wide-text;
+}
 
 @media screen and (max-width: 768px){
   #wrapper {
@@ -31,9 +37,11 @@ $site-wide-text: "Source Sans 3";
 #wrapper {
   width: 1600px;
   font-family: $site-wide-text;
+  margin: auto;
 }
 
 .footer {
+  color: $menu-bg;
   width: 100%;
   background-color: $footer-top;
 
@@ -66,6 +74,9 @@ $site-wide-text: "Source Sans 3";
   width: 1200px;
   min-height: 500px;
   margin: auto;
+  color: $timeline-text;
+  padding-top: 25px;
+  font-family: inherit;
 }
 
 .menu {
@@ -78,7 +89,7 @@ $site-wide-text: "Source Sans 3";
 
 .banner {
   width: 1200px;
-  height: 41px;
+  height: 45px;
   margin: auto;
   color: $menu-text;
   font-size: 12px;
@@ -114,6 +125,24 @@ $site-wide-text: "Source Sans 3";
   }
 }
 
+.rounded-button {
+  padding: 12px 16px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.shadow {
+  box-shadow: 1px 1px 5px 1px $menu-text;
+}
+
+.blue-text {
+  color: $nav-text;
+}
+
+.blue-bg {
+  background: $nav-text;
+}
+
 .item {
   float: right;
   display: flex;
@@ -123,9 +152,226 @@ $site-wide-text: "Source Sans 3";
   gap: 8px;
   color: inherit;
   font-size: inherit;
-
-  .selected {
-    border-bottom: 3px solid $menu-selected;
-  }
+  cursor: pointer;
 }
 
+.selected {
+  border-bottom: 3px solid $menu-selected;
+}
+#timeline {
+  width: 100%;
+  min-height: 280px;
+  margin: 30px 0px;
+}
+.timeline-base {
+  position: relative;
+  width: 1095px;
+  height: 20px;
+  top: 120px;
+  background-color: $timeline-bar;
+  border-radius: 10px;
+  margin: auto;
+}
+.timeline-nav {
+  position: absolute;
+  top: 26px;
+  width: 25px;
+  height: 210px;
+  cursor: pointer;
+}
+.timeline-icon {
+  position: absolute;
+  width: 105px;
+  top: 35px;
+  height: 210px;
+  margin: 0px 10px;
+}
+.timeline-icon3 {
+  position: absolute;
+  left: 51px;
+}
+.timeline-icon2 {
+  position: absolute;
+  left: 36px;
+  top: 79px;
+  cursor: pointer;
+}
+.timeline-icon1 {
+  position: absolute;
+  left: 22px;
+  top: 66px;
+  cursor: pointer;
+}
+.timeline-separator{
+
+}
+.timeline-title {
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+.timeline-date {
+  position: absolute;
+  font-size: 12px;
+  top: 35px;
+  width: 100%;
+  text-align: center;
+}
+.show-content{
+  display: block;
+}
+.sub-section{
+  display: none;
+  padding: 20px 0px;
+}
+.sub-menu {
+  width: 1200px;
+  padding: 30px 30px;
+}
+.back-sub-content {
+  font-size: 12px;
+  padding: 20px 0px;
+}
+.sub-section-header {
+  font-size: 40px; font-family: 'Bodoni Moda'
+}
+.sub-section-description {
+  font-size: 20px;
+  padding: 30px 0px;
+}
+#client-name {
+  width: 250px;
+  height: 54px;
+  margin: 5px 0px;
+  font-size: 14px;
+  padding: 18px 40px;
+  /*display: none;*/
+}
+#timeline-details-section {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  height: 360px;
+  /*display: none;*/
+}
+.detail-date-title{
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.detail-date-date{
+  position: absolute;
+  top: 70px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.detail-date-day{
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  text-align: center;
+  font-size: 13px;
+}
+.detail-date-hour {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 145px;
+  font-size: 13px;
+}
+.detail-label{
+  position: absolute;
+  width: auto;
+  top: 35px;
+  left: 60px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.detail-sublevel {
+  position: absolute;
+  width: auto;
+  top: 75px;
+  left: 60px;
+  font-size: 25px;
+}
+.timeline-detail-date {
+  position: absolute;
+  height: 250px;
+  width: 164px;
+  top: 55px;
+  left: 270px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: $details-bg;
+  color: #ffffff
+}
+.timeline-detail-main {
+  position: absolute;
+  height: 249px;
+  width: 496px;
+  top: 55px;
+  left: 434px;
+  border-radius: 0px 20px 20px 0px;
+  color: $details-bg;
+}
+.shadow-box {
+  box-shadow: 1px 1px 5px -1px;
+}
+.contacto {
+  position: absolute;
+  top: 35px;
+  left: 200px;
+  font-weight: 700;
+}
+.phone {
+  position: absolute;
+  top: 70px;
+  left: 200px;
+}
+.chat{
+  position: absolute;
+  top: 105px;
+  left: 200px;
+}
+.axa {
+  position: absolute;
+  top: 35px;
+  left: 500px;
+  font-weight: 700;
+}
+.politicas {
+  position: absolute;
+  top: 70px;
+  left: 500px;
+}
+.trabajo {
+  position: absolute;
+  top: 105px;
+  left: 500px
+}
+.integridad {
+  position: absolute;
+  top: 140px;
+  left: 500px;
+}
+.redes {
+  position: absolute;
+  top: 35px;
+  left: 900px;
+  font-weight: 700;
+}
+.redes-iconos{
+  position: absolute;
+  top: 90px;
+  left: 900px;
+}
+.aviso {
+  position: absolute;
+  top: 200px;
+  left: 900px;
+}

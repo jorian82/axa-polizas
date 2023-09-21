@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi historial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
@@ -39,14 +40,81 @@
         </div>
     </div>
     <div class="content">
-        <div style="min-height: 500px; width: 1200px; margin: auto;"></div>
-    </div>
-    <div class="footer">
-        <div class="options">
-            <div class="left-container"></div>
-            <div class="social-media"></div>
+        <div class="sub-menu" style="font-size: 14px">
+            <button type="button" class="btn btn-outline-primary rounded-button content-nav nav-angle-down">
+                &nbsp;&nbsp;<span class="fa fa-angle-down"></span>&nbsp;&nbsp;
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-button content-nav nav-detalles">
+                <span class="fa fa-list-alt"></span>
+                <span> Detalles</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-button content-nav nav-historial">
+                <span class="fa fa-folder"></span>
+                <span> Mi historial</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary rounded-button content-nav nav-guia">
+                <span class="fa fa-book"></span>
+                <span> Gu&iacute;a R&aacute;pida</span>
+            </button>
         </div>
-        <div class="privacy"></div>
+        <div class="back-sub-content">
+            <div class="blue-text"><span class="fa fa-arrow-left"></span>&nbsp;&nbsp;Atr&aacute;s</div>
+        </div>
+        <div id="historial" class="sub-section" >
+            <div class="sub-section-header">Mi historial</div>
+            <div class="sub-section-description">
+                A continuación te mostramos el historial de  tus siniestros, consultas, cuidados, recomendaciones y fórmulas médicas.
+            </div>
+            <div id="menu-year" class="sub-menu"></div>
+            <div id="timeline" class="shadow-box rounded-button rounded-3" style="position: relative">
+            </div>
+            <div id="client-name" class="shadow-box rounded-button rounded-3">Porfirio Díaz</div>
+            <div id="timeline-details-section" class="shadow-box rounded-button rounded-3" style="">
+                <div class="timeline-detail-date shadow-box"></div>
+                <div class="timeline-detail-main shadow-box"></div>
+            </div>
+        </div>
+        <div id="detalles" class="sub-section">
+            <div class="sub-section-header">Detalles</div>
+            <div class="sub-section-description">
+                Detalles referentes a la cuenta
+            </div>
+        </div>
+        <div id="guia" class="sub-section">
+            <div class="sub-section-header">Guía Rápida</div>
+            <div class="sub-section-description">
+                Guía rápida
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="position: relative">
+        <div class="options">
+            <div class="left-container">
+                <div class="contacto">CONTÁCTANOS</div>
+                <div class="phone">+52 800 900 1292</div>
+                <div class="chat">Chat</div>
+                <div class="axa">AXA Y TU</div>
+                <div class="politicas">Políticas de uso</div>
+                <div class="trabajo">Trabaja con nosotros</div>
+                <div class="integridad">Integridad</div>
+            </div>
+            <div class="social-media">
+                <div class="redes">SÍGUENOS EN</div>
+                <div class="redes-iconos">
+                    <i class="fa fa-facebook-f fa-2x"></i>&nbsp;&nbsp;
+                    <i class="fa fa-instagram fa-2x"></i>&nbsp;&nbsp;
+                    <i class="fa fa-twitter fa-2x"></i>&nbsp;&nbsp;
+                    <i class="fa fa-youtube-play fa-2x"></i>&nbsp;&nbsp;
+                    <i class="fa fa-linkedin fa-2x"></i>&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="privacy">
+            <div class="aviso"><b>Aviso de privacidad</b> © 2022 AXA México, todos los derechos reservados</div>
+        </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </html>
